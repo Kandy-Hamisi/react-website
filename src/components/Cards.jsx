@@ -15,6 +15,32 @@ function Cards() {
                             label="Adventure"
                             path="/services"
                         />
+                        <CardItem 
+                            src="images/img-8.jpg"
+                            text="Enjoy a one week trip to the Sahara and see the wonders in it"
+                            label="Adventure"
+                            path="/services"
+                        />
+                    </ul>
+                    <ul className="cards__items">
+                        <CardItem 
+                            src="images/img-5.jpg"
+                            text="Lets go for a little 3 day hike in the outskirts of New York"
+                            label="Adventure"
+                            path="/services"
+                        />
+                        <CardItem 
+                            src="images/img-6.jpg"
+                            text="Lets go for a little 3 day hike in the outskirts of New York"
+                            label="Adventure"
+                            path="/services"
+                        />
+                        <CardItem 
+                            src="images/img-7.jpg"
+                            text="Lets go for a little 3 day hike in the outskirts of New York"
+                            label="Adventure"
+                            path="/services"
+                        />
                     </ul>
                 </div>
             </div>
