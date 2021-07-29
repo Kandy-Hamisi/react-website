@@ -1,16 +1,33 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from './Button';
+import './navbar.css'
 
 
 function Navbar() {
 
     // handling click function of navbar
-    const [click, setClick] = useState(0);
+    const [click, setClick] = useState(false);
     console.log('re-rendering.....');
+    const [button, setButton] = useState(true);
 
     // setting the click value to true
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+
+    const showButton = () => {
+        if(window.innerWidth <= 960){
+            setButton(false);
+        }else{
+            setButton(true)
+        }
+    };
+
+    useEffect(() => {
+        showButton();
+    }, []);
+
+    window.addEventListener('resize', showButton);
  
     return(
         <>
@@ -37,6 +54,7 @@ function Navbar() {
                            <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>Sign Up</Link>
                        </li>
                    </ul>
+                   {button && <Button buttonStyle="btn--outline">Sign Up</Button>}
                 </div>
             </nav>
         </>
