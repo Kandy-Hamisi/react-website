@@ -73,10 +73,11 @@
 }
 
 .sign-up {
-  background-image: url('./media/img-8.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./media/img-8.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
+  /* font-size: 100px; */
+  font-size: 20px !important;
 }
